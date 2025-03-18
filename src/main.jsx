@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Product from './product.jsx'
+import Chatbot from './Chatbot/index.jsx'
 
 
 
@@ -18,10 +18,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />
   },
-  // {
-  //   path: "/product",
-  //   element: <Product />,
-  // },
+  {
+    path: "/chat",
+    element: <Chatbot />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
